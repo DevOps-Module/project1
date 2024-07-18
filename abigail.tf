@@ -15,6 +15,8 @@ terraform {
 # Configure provider credentials
 provider "aws" {
   region     = "us-east-2"
+  AWS_SECRET = 
+  AWS_ACCESS =
   }
 
 
