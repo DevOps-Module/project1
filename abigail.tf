@@ -17,4 +17,12 @@ provider "aws" {
   region     = "us-east-2"
   }
 
+# Create vpc
+resource {aws_vpc "moban-vpc"
+cidr_block = "32.0.0.0/16"
+enable_dns_name = true
 
+tag {
+	name=mobann-vpc
+}
+}
